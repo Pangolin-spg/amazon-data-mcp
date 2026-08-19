@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "pangolinfoAuthorization": {
+      "type": "string",
+      "title": "Pangolinfo Authorization value",
+      "description": "Enter Bearer followed by your Pangolinfo API key, for example: Bearer pgl_xxx",
+      "x-from": {
+        "header": "pangolinfo-authorization"
+      },
+      "x-to": {
+        "header": "Authorization"
+      }
+    }
+  },
+  "required": [
+    "pangolinfoAuthorization"
+  ]
+}
