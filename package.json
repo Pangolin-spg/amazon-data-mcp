@@ -1,6 +1,6 @@
 {
   "name": "pangolinfo-amazon-data-mcp",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Official stdio bridge to Pangolinfo Amazon Data MCP with 19 ecommerce and market intelligence tools.",
   "type": "module",
   "bin": {
@@ -10,8 +10,7 @@
     "dist",
     "README.md",
     "LICENSE",
-    "BRANDING.md",
-    "server.json"
+    "BRANDING.md"
   ],
   "scripts": {
     "build": "tsc -p tsconfig.json",
@@ -22,7 +21,7 @@
   "engines": {
     "node": ">=18"
   },
-  "mcpName": "io.github.Pangolin-spg/amazon-data-mcp",
+  "mcpName": "io.github.Pangolin-spg/pangolinfo-mcp",
   "keywords": [
     "mcp",
     "model-context-protocol",

@@ -61,9 +61,9 @@ An optional `PANGOLINFO_MCP_URL` environment variable can override the endpoint 
 - [Amazon Data MCP product page](https://www.pangolinfo.com/amazon-data-mcp/)
 - [Pangolinfo website](https://www.pangolinfo.com/)
 - [GitHub repository](https://github.com/Pangolin-spg/amazon-data-mcp)
+- [Canonical MCP Registry source](https://github.com/Pangolin-spg/pangolinfo-mcp)
 - [Issue tracker](https://github.com/Pangolin-spg/amazon-data-mcp/issues)
 
 ## License and trademarks
 
 The bridge source code is licensed under the MIT License. Pangolinfo names, logos, product marks, and brand assets are not granted under that license; see [BRANDING.md](BRANDING.md).
-

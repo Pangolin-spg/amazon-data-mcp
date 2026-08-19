@@ -9,7 +9,7 @@ import { StreamableHTTPClientTransport } from '@modelcontextprotocol/sdk/client/
 import { Server } from '@modelcontextprotocol/sdk/server/index.js';
 import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js';
 
-const VERSION = '0.1.1';
+const VERSION = '0.1.2';
 const DEFAULT_ENDPOINT = 'https://mcp.pangolinfo.com/mcp';
 
 if (process.argv.includes('--help') || process.argv.includes('-h')) {
