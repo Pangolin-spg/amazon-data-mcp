@@ -1,9 +1,9 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.pangolin-spg/amazon-data-mcp",
+  "name": "io.github.Pangolin-spg/amazon-data-mcp",
   "title": "Pangolinfo Amazon Data MCP",
   "description": "Real-time Amazon commerce, WIPO design patent, trends, search, and local market data.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "websiteUrl": "https://www.pangolinfo.com/amazon-data-mcp/",
   "repository": {
     "url": "https://github.com/Pangolin-spg/amazon-data-mcp",
@@ -33,7 +33,7 @@
     {
       "registryType": "npm",
       "identifier": "pangolinfo-amazon-data-mcp",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "transport": {
         "type": "stdio"
       },
