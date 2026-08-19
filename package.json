@@ -9,6 +9,7 @@
   "files": [
     "dist",
     "README.md",
+    "llms-install.md",
     "LICENSE",
     "BRANDING.md"
   ],

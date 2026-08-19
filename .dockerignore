@@ -1,0 +1,10 @@
+.git
+.github
+.env
+assets
+node_modules
+test
+*.log
+BRANDING.md
+CONTRIBUTING.md
+SECURITY.md

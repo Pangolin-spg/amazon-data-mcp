@@ -50,6 +50,24 @@ Clients with native Streamable HTTP support can connect directly:
 - Endpoint: `https://mcp.pangolinfo.com/mcp`
 - Header: `Authorization: Bearer YOUR_PANGOLINFO_API_KEY`
 
+Agent-oriented installation instructions are also available in [`llms-install.md`](llms-install.md).
+
+## Run with Docker
+
+Build the official bridge locally:
+
+```bash
+docker build -t pangolinfo-amazon-data-mcp .
+```
+
+Run it as a stdio MCP server while passing the key at runtime:
+
+```bash
+docker run --rm -i -e PANGOLINFO_API_KEY pangolinfo-amazon-data-mcp
+```
+
+Set `PANGOLINFO_API_KEY` in your shell or secret manager. Do not bake it into the image, Dockerfile, or source tree.
+
 ## How the bridge works
 
 The package opens an authenticated Streamable HTTP connection to Pangolinfo, then exposes the remote `tools/list` and `tools/call` methods over local stdio. Tool definitions therefore stay synchronized with the hosted service; the package contains no embedded customer data and does not log credentials.
@@ -63,6 +81,7 @@ An optional `PANGOLINFO_MCP_URL` environment variable can override the endpoint 
 - [GitHub repository](https://github.com/Pangolin-spg/amazon-data-mcp)
 - [Canonical MCP Registry source](https://github.com/Pangolin-spg/pangolinfo-mcp)
 - [Issue tracker](https://github.com/Pangolin-spg/amazon-data-mcp/issues)
+- [MCP client setup guide](https://docs.pangolinfo.com/en-help-center/mcp/agents)
 
 ## License and trademarks
 
