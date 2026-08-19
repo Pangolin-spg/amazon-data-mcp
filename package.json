@@ -1,0 +1,58 @@
+{
+  "name": "pangolinfo-amazon-data-mcp",
+  "version": "0.1.0",
+  "description": "Official stdio bridge to Pangolinfo Amazon Data MCP with 19 ecommerce and market intelligence tools.",
+  "type": "module",
+  "bin": {
+    "pangolinfo-amazon-data-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "BRANDING.md",
+    "server.json"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "check": "tsc -p tsconfig.json --noEmit",
+    "test": "npm run build && node --test",
+    "prepack": "npm run build"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "mcpName": "io.github.pangolin-spg/amazon-data-mcp",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "amazon",
+    "amazon-data",
+    "amazon-scraper",
+    "ecommerce",
+    "market-research",
+    "pangolinfo"
+  ],
+  "homepage": "https://www.pangolinfo.com/amazon-data-mcp/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pangolin-spg/amazon-data-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Pangolin-spg/amazon-data-mcp/issues"
+  },
+  "license": "MIT",
+  "author": "Pangolinfo",
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "typescript": "^5.8.3"
+  }
+}
+
