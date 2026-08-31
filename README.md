@@ -54,9 +54,10 @@ Agent-oriented installation instructions are also available in [`llms-install.md
 
 ## Run with Docker
 
-Pull the public multi-platform image from GitHub Container Registry:
+Pull the public multi-platform image from Docker Hub or GitHub Container Registry:
 
 ```bash
+docker pull pangolinfo/amazon-data-mcp:latest
 docker pull ghcr.io/pangolin-spg/amazon-data-mcp:latest
 ```
 
@@ -65,7 +66,7 @@ Run it as a stdio MCP server while passing the key only at runtime:
 ```bash
 docker run --rm -i \
   -e PANGOLINFO_API_KEY \
-  ghcr.io/pangolin-spg/amazon-data-mcp:latest
+  pangolinfo/amazon-data-mcp:latest
 ```
 
 Or build the official bridge locally:
@@ -97,6 +98,7 @@ An optional `PANGOLINFO_MCP_URL` environment variable can override the endpoint 
 - [Amazon Alexa API](https://www.pangolinfo.com/amazon-alexa-api/)
 - [Pangolinfo website](https://www.pangolinfo.com/)
 - [GitHub repository](https://github.com/Pangolin-spg/amazon-data-mcp)
+- [Docker Hub image](https://hub.docker.com/r/pangolinfo/amazon-data-mcp)
 - [Canonical MCP Registry source](https://github.com/Pangolin-spg/pangolinfo-mcp)
 - [Issue tracker](https://github.com/Pangolin-spg/amazon-data-mcp/issues)
 - [MCP client setup guide](https://docs.pangolinfo.com/en-help-center/mcp/agents)
