@@ -54,13 +54,27 @@ Agent-oriented installation instructions are also available in [`llms-install.md
 
 ## Run with Docker
 
-Build the official bridge locally:
+Pull the public multi-platform image from GitHub Container Registry:
+
+```bash
+docker pull ghcr.io/pangolin-spg/amazon-data-mcp:latest
+```
+
+Run it as a stdio MCP server while passing the key only at runtime:
+
+```bash
+docker run --rm -i \
+  -e PANGOLINFO_API_KEY \
+  ghcr.io/pangolin-spg/amazon-data-mcp:latest
+```
+
+Or build the official bridge locally:
 
 ```bash
 docker build -t pangolinfo-amazon-data-mcp .
 ```
 
-Run it as a stdio MCP server while passing the key at runtime:
+Run the local image:
 
 ```bash
 docker run --rm -i -e PANGOLINFO_API_KEY pangolinfo-amazon-data-mcp
@@ -77,11 +91,19 @@ An optional `PANGOLINFO_MCP_URL` environment variable can override the endpoint 
 ## Links
 
 - [Amazon Data MCP product page](https://www.pangolinfo.com/amazon-data-mcp/)
+- [Amazon Scraper API](https://www.pangolinfo.com/amazon-scraper-api/)
+- [AI Overview SERP API](https://www.pangolinfo.com/ai-overview-serp-api/)
+- [Amazon Niche Data API](https://www.pangolinfo.com/amazon-niche-data-api/)
+- [Amazon Alexa API](https://www.pangolinfo.com/amazon-alexa-api/)
 - [Pangolinfo website](https://www.pangolinfo.com/)
 - [GitHub repository](https://github.com/Pangolin-spg/amazon-data-mcp)
 - [Canonical MCP Registry source](https://github.com/Pangolin-spg/pangolinfo-mcp)
 - [Issue tracker](https://github.com/Pangolin-spg/amazon-data-mcp/issues)
 - [MCP client setup guide](https://docs.pangolinfo.com/en-help-center/mcp/agents)
+- [Amazon API documentation](https://docs.pangolinfo.com/en-api-reference/amazonApi/amazonAPI)
+- [AI Overview API documentation](https://docs.pangolinfo.com/en-api-reference/serpApi/aiOverview)
+- [Amazon Niche API documentation](https://docs.pangolinfo.com/en-api-reference/amazonNicheAPI/filterNiche)
+- [Amazon Alexa API documentation](https://docs.pangolinfo.com/en-api-reference/amazonAlexaAPI/amazonAlexaAPI)
 
 ## License and trademarks
 

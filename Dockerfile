@@ -14,6 +14,9 @@ LABEL org.opencontainers.image.title="Pangolinfo Amazon Data MCP" \
       org.opencontainers.image.description="Official stdio bridge to Pangolinfo Amazon Data MCP with 19 live commerce intelligence tools" \
       org.opencontainers.image.url="https://www.pangolinfo.com/amazon-data-mcp/" \
       org.opencontainers.image.source="https://github.com/Pangolin-spg/amazon-data-mcp" \
+      org.opencontainers.image.documentation="https://docs.pangolinfo.com/en-help-center/mcp/agents" \
+      org.opencontainers.image.vendor="PANGOLIN INFO TECH PTE. LTD." \
+      org.opencontainers.image.authors="support@pangolinfo.com" \
       org.opencontainers.image.licenses="MIT"
 
 ENV NODE_ENV=production
