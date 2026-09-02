@@ -1,5 +1,7 @@
 # Pangolinfo Amazon Data MCP
 
+[![Listed on mcpservers.org](https://mcpservers.org/badge.svg)](https://mcpservers.org/servers/pangolin-spg/amazon-data-mcp)
+
 [Pangolinfo Amazon Data MCP](https://www.pangolinfo.com/amazon-data-mcp/) gives AI agents real-time access to Amazon commerce intelligence, WIPO design-patent data, Google Trends and search intelligence, and local market data.
 
 This package is Pangolinfo's official stdio bridge to the hosted Streamable HTTP MCP server. It discovers the current remote tool schemas at startup and forwards MCP tool calls without storing your API key or result data.
